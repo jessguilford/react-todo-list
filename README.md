@@ -1,3 +1,9 @@
+## About
+This is a todo list application built with React as a learning exercise. Fire it up and enter a new todo! You can also delete todo items or mark them complete. Note that storage does not persist - your todos will not be saved anywhere.
+
+Based on Traversy Media's React JS Crash Course - 2019 Tutorial:
+[https://www.youtube.com/watch?v=sBws8MSXN7A&t=4578s](https://www.youtube.com/watch?v=sBws8MSXN7A&t=4578s)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
