@@ -13,7 +13,7 @@ class App extends Component {
         completed: false
       },
       {
-        title: 'Blergh',
+        title: 'Do the dishes',
         id: 2,
         completed: false
       },
@@ -22,7 +22,8 @@ class App extends Component {
         id: 3,
         completed: false
       }
-    ]
+    ],
+    idCount: 3
   };
 
   markComplete = (id) => {
@@ -43,14 +44,17 @@ class App extends Component {
   }
 
   addTodo = (title) => {
-    console.log(title);
+    const id = this.state.idCount + 1;
     const todo = {
       title: title,
-      id: '4'
+      id: id,
+      completed: false
     };
+
     this.setState({
-      todos: [...this.state.todos, todo]
-    });
+      todos: [...this.state.todos, todo],
+      idCount: id
+    });;
   }
 
   render() {
